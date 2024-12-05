@@ -51,7 +51,7 @@
   <project path="vendor/xiaomi/peridot" name="vendor_xiaomi_peridot" revision="vic" remote="xiaomi-peridot" />
   <project path="hardware/xiaomi" name="hardware_xiaomi" revision="vic" remote="xiaomi-peridot" />
   <project path="device/xiaomi/peridot-miuicamera" name="device_xiaomi_peridot-miuicamera" revision="vic" remote="xiaomi-peridot" />
-  <project path="vendor/xiaomi/peridot-miuicamera" name="SwapnilVicky/vendor_xiaomi_peridot-miuicamera" revision="main" remote="gitlab" / -->
+  <project path="vendor/xiaomi/peridot-miuicamera" name="SwapnilVicky/vendor_xiaomi_peridot-miuicamera" revision="main" remote="gitlab" />
   <project path="device/xiaomi/peridot-kernel" name="device_xiaomi_peridot-kernel" remote="xiaomi-peridot" />
   <project path="device/xiaomi/peridot" name="project-dynamic/android_device_xiaomi_peridot" revision="15-rising" remote="github" />
 </manifest>
