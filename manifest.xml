@@ -3,6 +3,8 @@
   <remote name="xiaomi-peridot"
            fetch="https://github.com/xiaomi-peridot"
            revision="vic" />
+  <remote name="github"
+           fetch="https://github.com/"
   <remote name="gitlab-swapnil"
           fetch="https://gitlab.com/SwapnilVicky" />
 
@@ -55,5 +57,5 @@
   <project path="device/xiaomi/peridot-miuicamera" name="device_xiaomi_peridot-miuicamera" revision="14" remote="xiaomi-peridot" />
   <project path="vendor/xiaomi/peridot-miuicamera" name="vendor_xiaomi_peridot-miuicamera" revision="main" remote="gitlab-swapnil" />
   <project path="device/xiaomi/peridot-kernel" name="device_xiaomi_peridot-kernel" remote="xiaomi-peridot" />
-  <project path="device/xiaomi/peridot" name="project-dynamic/android_device_xiaomi_peridot" revision="15-rising" remote="github" />
+  <project path="device/xiaomi/peridot" name="project-dynamic/android_device_xiaomi_peridot" revision="15-voltage" remote="github" />
 </manifest>
