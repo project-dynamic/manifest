@@ -3,14 +3,16 @@
   <remote name="xiaomi-peridot"
            fetch="https://github.com/xiaomi-peridot"
            revision="vic" />
+
   <remote name="github"
-           fetch="https://github.com/"
+           fetch="https://github.com/" />
+
   <remote name="gitlab-swapnil"
           fetch="https://gitlab.com/SwapnilVicky" />
 
-  <!-- Hardware -->
-  <remove-project name="hardware_qcom-caf_common" />
-  <project path="hardware/qcom-caf/common" name="hardware_qcom-caf_common" groups="qcom" remote="xiaomi-peridot" >
+    <!-- Hardware -->
+    <remove-project name="hardware_qcom-caf_common" />
+    <project path="hardware/qcom-caf/common" name="hardware_qcom-caf_common" groups="qcom" remote="xiaomi-peridot" >
     <!-- add guard for AOSP hardware/qcom dir -->
     <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
     <!-- add guards for CAF repositories -->
@@ -57,5 +59,5 @@
   <project path="device/xiaomi/peridot-miuicamera" name="device_xiaomi_peridot-miuicamera" revision="14" remote="xiaomi-peridot" />
   <project path="vendor/xiaomi/peridot-miuicamera" name="vendor_xiaomi_peridot-miuicamera" revision="main" remote="gitlab-swapnil" />
   <project path="device/xiaomi/peridot-kernel" name="device_xiaomi_peridot-kernel" remote="xiaomi-peridot" />
-  <project path="device/xiaomi/peridot" name="project-dynamic/android_device_xiaomi_peridot" revision="15-voltage" remote="github" />
+  <project path="device/xiaomi/peridot" name="project-dynamic/android_device_xiaomi_peridot" revision="15-infinity" remote="github" />
 </manifest>
