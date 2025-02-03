@@ -50,7 +50,6 @@
   <project path="device/qcom/sepolicy_vndr/sm8650" name="device_qcom_sepolicy_vndr" groups="qcom,lanai-vendor" revision="vic-sm8650" remote="xiaomi-peridot" />
 
   <!-- Additional Repositories -->
-  <project path="frameworks/base" name="project-dynamic/android_frameworks_base" revision="fifteen" remote="github" />
   <project path="vendor/xiaomi/peridot" name="project-dynamic/vendor_xiaomi_peridot" revision="15" remote="github" />
   <project path="hardware/xiaomi" name="hardware_xiaomi" revision="vic" remote="xiaomi-peridot" />
   <project path="device/xiaomi/peridot-miuicamera" name="project-dynamic/device_xiaomi_peridot-miuicamera" revision="15" remote="github" />
