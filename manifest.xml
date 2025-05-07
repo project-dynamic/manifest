@@ -3,12 +3,9 @@
   <remote name="xiaomi-peridot"
            fetch="https://github.com/xiaomi-peridot"
            revision="vic" />
-  <remote name="gitlab-swapnil"
-          fetch="https://gitlab.com/SwapnilVicky" />
 
   <!-- Hardware -->
-  <remove-project name="android_hardware_xiaomi" />
-  <remove-project name="android_hardware_qcom-caf_common" />
+  <remove-project path="hardware/qcom-caf/common" />
   <project path="hardware/qcom-caf/common" name="hardware_qcom-caf_common" groups="qcom" remote="xiaomi-peridot" >
     <!-- add guard for AOSP hardware/qcom dir -->
     <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
@@ -41,20 +38,27 @@
     <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8650/Android.mk" />
   </project>
 
-  <project path="hardware/qcom-caf/sm8650/audio/agm" name="vendor_qcom_opensource_agm" groups="qcom,lanai-audio" revision="vic-sm8650" remote="xiaomi-peridot" />
-  <project path="hardware/qcom-caf/sm8650/audio/pal" name="vendor_qcom_opensource_arpal-lx" groups="qcom,lanai-audio" revision="vic-sm8650" remote="xiaomi-peridot" />
-  <project path="hardware/qcom-caf/sm8650/audio/primary-hal" name="hardware_qcom_audio-ar" groups="qcom,lanai-audio" revision="vic-sm8650" remote="xiaomi-peridot" />
-  <project path="hardware/qcom-caf/sm8650/data-ipa-cfg-mgr" name="vendor_qcom_opensource_data-ipa-cfg-mgr" groups="qcom,lanai-vendor" revision="vic-sm8650" remote="xiaomi-peridot" />
-  <project path="hardware/qcom-caf/sm8650/dataipa" name="vendor_qcom_opensource_dataipa" groups="qcom,lanai-vendor" revision="vic-sm8650" remote="xiaomi-peridot" />
-  <project path="hardware/qcom-caf/sm8650/display" name="hardware_qcom_display" groups="qcom" revision="vic-sm8650" remote="xiaomi-peridot" />
-  <project path="hardware/qcom-caf/sm8650/media" name="hardware_qcom_media" groups="qcom,lanai-vendor" revision="vic-sm8650" remote="xiaomi-peridot" />
-  <project path="device/qcom/sepolicy_vndr/sm8650" name="device_qcom_sepolicy_vndr" groups="qcom,lanai-vendor" revision="vic-sm8650" remote="xiaomi-peridot" />
+  <remove-project path="hardware/qcom-caf/sm8650/audio/agm" />
+  <project path="hardware/qcom-caf/sm8650/audio/agm" name="vendor_qcom_opensource_agm" groups="qcom,lanai-audio" revision="lineage-22.2-caf-sm8650" remote="xiaomi-peridot" />
 
-  <!-- Additional Repositories -->
-  <project path="vendor/xiaomi/peridot" name="project-dynamic/vendor_xiaomi_peridot" revision="15" remote="github" />
-  <project path="hardware/xiaomi" name="hardware_xiaomi" revision="vic" remote="xiaomi-peridot" />
-  <project path="device/xiaomi/peridot-miuicamera" name="device_xiaomi_peridot-miuicamera" revision="14" remote="xiaomi-peridot" />
-  <project path="vendor/xiaomi/peridot-miuicamera" name="vendor_xiaomi_peridot-miuicamera" revision="main" remote="gitlab-swapnil" />
-  <project path="device/xiaomi/peridot-kernel" name="project-dynamic/device_xiaomi_peridot-kernel" remote="github" revision="15" />
-  <project path="device/xiaomi/peridot" name="project-dynamic/android_device_xiaomi_peridot" revision="15-infinity" remote="github" />
+  <remove-project path="hardware/qcom-caf/sm8650/audio/pal" />
+  <project path="hardware/qcom-caf/sm8650/audio/pal" name="vendor_qcom_opensource_arpal-lx" groups="qcom,lanai-audio" revision="lineage-22.2-caf-sm8650" remote="xiaomi-peridot" />
+
+  <remove-project path="hardware/qcom-caf/sm8650/audio/primary-hal" />
+  <project path="hardware/qcom-caf/sm8650/audio/primary-hal" name="hardware_qcom_audio-ar" groups="qcom,lanai-audio" revision="lineage-22.2-caf-sm8650" remote="xiaomi-peridot" />
+
+  <remove-project path="hardware/qcom-caf/sm8650/display" />
+  <project path="hardware/qcom-caf/sm8650/display" name="hardware_qcom_display" groups="qcom" revision="lineage-22.2-caf-sm8650" remote="xiaomi-peridot" />
+
+  <remove-project path="device/qcom/sepolicy_vndr/sm8650" />
+  <project path="device/qcom/sepolicy_vndr/sm8650" name="device_qcom_sepolicy_vndr" groups="qcom,lanai-vendor" revision="vic-sm8650" remote="xiaomi-peridot" />
+  
+  <remove-project path="hardware/xiaomi" />
+  <project path="hardware/xiaomi" name="xiaomi-peridot/hardware_xiaomi" revision="vic-qpr2" remote="github" />
+
+  <project path="device/xiaomi/peridot" name="project-dynamic/device_xiaomi_peridot" revision="staging/vic" remote="github" />
+  <project path="device/xiaomi/peridot-miuicamera" name="peridot-hyperos-2/vendor_xiaomi_peridot-miuicamera" revision="aosp-15-qpr2" remote="github" />
+  <project path="vendor/xiaomi/peridot-miuicamera" name="peridot-hyperos-2/device_xiaomi_peridot-miuicamera" revision="aosp-15-qpr2" remote="github" />
+  <project path="device/xiaomi/peridot-kernel" name="xiaomi-peridot/device_xiaomi_peridot-kernel" revision="staging/vic" remote="github" />
+  <project path="vendor/xiaomi/peridot" name="xiaomi-peridot/vendor_xiaomi_peridot" revision="staging/vic" remote="github" />
 </manifest>
